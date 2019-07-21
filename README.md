@@ -1,5 +1,4 @@
 ### MTPing
-`npm i @mtproto-org/mtping`
 
 ```javascript
 const mtping = require('@mtproto-org/mtping');
@@ -7,10 +6,14 @@ const mtping = require('@mtproto-org/mtping');
 const options = {
   host: 'localhost', // default 'localhost'
   port: 3000 // default :80
+  mtproxy_port: 1122 // default :2233
+  mtproxy_secret: 'aaaa2222bbbb4444cccc6666dddd8888' // default '11112222333344445555666677778888'
 }
 
-mtping(options)
+mtping(options) // http://host:port => { status: 'ok' }
 ```
+
+
 
 ### Copyright
 Crafted with <3 by [MTProto.org](https://mtproto.org)
